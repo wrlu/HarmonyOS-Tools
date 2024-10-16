@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\xiaolu\\.ohos\\config\\default_DumpHarmony_xpGF1FMukDZyXVcGj-NDi5Fx8wNJ919tDqlgoqtPKEU=.cer",
+          "storePassword": "0000001B6D6A6C80D4F8DC9F729D908BCD306C4CAA3AADD23019630FF4937380D9D972F4496F2F9B9240B5",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B28191DB8BC7A5D15D81D27C7F0D879AB73BFA860A2FEE1A90C3F22D2D6A86ED0B6FB941AB93741",
+          "profile": "C:\\Users\\xiaolu\\.ohos\\config\\default_DumpHarmony_xpGF1FMukDZyXVcGj-NDi5Fx8wNJ919tDqlgoqtPKEU=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\xiaolu\\.ohos\\config\\default_DumpHarmony_xpGF1FMukDZyXVcGj-NDi5Fx8wNJ919tDqlgoqtPKEU=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

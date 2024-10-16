@@ -1,0 +1,1 @@
+export const copyDir: (src: String, dst: String) => Number;
