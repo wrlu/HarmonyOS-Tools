@@ -21,4 +21,4 @@ if __name__ == '__main__':
         os.system('ip addr')
     if not os.path.exists('uploads'):
         os.makedirs('uploads')
-    app.run(host="192.168.31.223", port=5000)
+    app.run(host="192.168.31.201", port=5000)

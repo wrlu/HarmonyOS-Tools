@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "certpath": "C:\\Users\\xiaolu\\.ohos\\config\\default_DumpHarmony_xpGF1FMukDZyXVcGj-NDi5Fx8wNJ919tDqlgoqtPKEU=.cer",
-          "storePassword": "0000001B6D6A6C80D4F8DC9F729D908BCD306C4CAA3AADD23019630FF4937380D9D972F4496F2F9B9240B5",
+          "certpath": "C:\\Users\\xiaolu\\.ohos\\config\\default_HarmonyOS-Tools_ti0F-Ud-0M4y4lxi2TbAsS7pFTSBM9Mo3SYlDWX3N-c=.cer",
+          "storePassword": "0000001BA14A5719A2768D18BF34CD690C69763306DF59FF63222F825EC7E5ADE5BE6A7D81431291474A45",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B28191DB8BC7A5D15D81D27C7F0D879AB73BFA860A2FEE1A90C3F22D2D6A86ED0B6FB941AB93741",
-          "profile": "C:\\Users\\xiaolu\\.ohos\\config\\default_DumpHarmony_xpGF1FMukDZyXVcGj-NDi5Fx8wNJ919tDqlgoqtPKEU=.p7b",
+          "keyPassword": "0000001B8CF1FD1BDE60303FE11C9A00B9ACDD6AF5CA8CFD774CC9D1619EC2CD469102B7AB7A6F079EE962",
+          "profile": "C:\\Users\\xiaolu\\.ohos\\config\\default_HarmonyOS-Tools_ti0F-Ud-0M4y4lxi2TbAsS7pFTSBM9Mo3SYlDWX3N-c=.p7b",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "C:\\Users\\xiaolu\\.ohos\\config\\default_DumpHarmony_xpGF1FMukDZyXVcGj-NDi5Fx8wNJ919tDqlgoqtPKEU=.p12"
+          "storeFile": "C:\\Users\\xiaolu\\.ohos\\config\\default_HarmonyOS-Tools_ti0F-Ud-0M4y4lxi2TbAsS7pFTSBM9Mo3SYlDWX3N-c=.p12"
         }
       }
     ],
