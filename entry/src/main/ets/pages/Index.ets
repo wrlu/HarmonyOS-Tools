@@ -10,7 +10,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let TAG = "DumpHarmonyArk"
 let context = getContext(this) as common.UIAbilityContext;
-let uploadUrl = "http://192.168.0.193:5000/upload_from_ohos"
+let uploadUrl = "http://192.168.8.42:5000/upload_from_ohos"
 
 @Entry
 @Component
@@ -109,7 +109,10 @@ function startDumpHarmony() {
   }
   fs.mkdirSync(dumpPath);
 
-  copyAndSendSystemPath("/system/app", dumpPath, "system_app");
   copyAndSendSystemPath("/system/lib64", dumpPath, "system_lib64");
-  copyAndSendSystemPath("/system/lib", dumpPath, "system_lib");
+  copyAndSendSystemPath("/system/framework", dumpPath, "system_framework");
+  copyAndSendSystemPath("/system/etc", dumpPath, "system_etc");
+  copyAndSendSystemPath("/system/usr", dumpPath, "system_usr");
+  copyAndSendSystemPath("/system/app/appServiceFwk", dumpPath, "system_app_service_fwk");
+  copyAndSendSystemPath("/module_update", dumpPath, "module_update");
 }

@@ -15,13 +15,11 @@
 3. HarmonyOS NEXT手机和PC运行在同一局域网，修改app.run的参数为你想要的，并且运行web/file_receiver.py，并在Index.ets中修改uploadUrl为相同正确的URL；
 4. 使用DevEco Studio运行应用，过滤日志输出“DumpHarmony”查看上传进度，文件保存在uploads下。
 
-## 获取第三方应用文件
-1. 电脑为鸿蒙Command line tools配置好环境变量，可执行hdc命令；
-2. 直接执行`tools/dump_harmony.py`。
+## 为什么使用这种获取方式
+华为对hdc shell的权限限制极为严格，并不能访问系统大部分文件路径的内容，所以无法像Android手机一样通过adb shell来获取文件。如果在Android上有类似的需求可以使用：https://github.com/wrlu/Android-Tools
 
-## 为什么使用两种获取方式
-1. 获取系统文件夹：华为对hdc shell的权限限制极为严格，并不能访问系统大部分文件路径的内容，所以无法像Android手机一样通过adb shell来获取文件。如果在Android上有类似的需求可以使用：https://github.com/wrlu/Android-Tools
-2. 获取第三方应用文件：可通过bm命令获取到hap路径，不过无法直接使用hdc file recv拉取，从某个版本之后可以先复制到`/data/local/tmp`然后再recv.但是在App的权限下限制了获取第三方应用文件，这个操作需要一个system_basic级别的系统权限`ohos.permission.ACCESS_BUNDLE_DIR`，参见：[仅对系统应用开放的权限](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-system-apps.md#ohos.permission.access_bundle_dir)
+## 为什么无法获取第三方应用文件
+App的权限下限制了获取第三方应用文件，这个操作需要一个system_basic级别的系统权限`ohos.permission.ACCESS_BUNDLE_DIR`，参见：[仅对系统应用开放的权限](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-system-apps.md#ohos.permission.access_bundle_dir)。之前先复制到`/data/local/tmp`然后再recv的方法在新版本已经被华为封禁，无法使用。
 
 ## License
 MIT License
