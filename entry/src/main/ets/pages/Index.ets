@@ -20,9 +20,7 @@ struct Index {
   build() {
     Row() {
       Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
+        Button(this.message).height(50).width(200).margin(20).fontSize(30)
           .onClick(() => {
             startDumpHarmony();
           })
